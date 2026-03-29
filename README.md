@@ -27,7 +27,7 @@ cd PandaLLMPickAndPlace
 # Install requirements
 pip install -r requirements.txt
 
-# Paste a valid Groq API key in the .env file
+# Paste a valid Groq API key into the .env file
 ```
 Additionally, follow the instructions in [this Colab notebook](https://colab.research.google.com/github/roboflow-ai/notebooks/blob/main/notebooks/zero-shot-object-detection-with-grounding-dino.ipynb#scrollTo=Nkrkkj7CUlkh) to install Grounding DINO.
 
