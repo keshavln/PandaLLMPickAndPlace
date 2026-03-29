@@ -68,4 +68,4 @@ Files used:
 
 - As of now, end-effector rotation is not supported. This would make it difficult to grip a cuboidal object that is placed at an angle.
 - The x and z tolerances need to be calibrated manually.
-- Considering multiple different camera angles could result in more accurate object and target coordinates and could eliminate the need for two iterations to achieve end-effector alignment.
+- Considering multiple different camera angles could result in more accurate object and target coordinates and could eliminate the need for two iterations to achieve end-effector alignment. This would also widen the range of automated pick-and-place tasks as currently, objects that are out of view of the end-effector camera cannot be interacted with.
