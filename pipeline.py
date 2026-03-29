@@ -26,7 +26,7 @@ Manipulation sequence:
 """
 
 manipulator.move_to_object(x_tol=0.0,z_tol=0.075)
-manipulator.move_to_object(x_tol=0.05,z_tol=0.075)
+manipulator.move_to_object(x_tol=0.05,z_tol=0.075) # Second iteration to refine object coordinates
 manipulator.set_gripper_state(1.0)
 manipulator.move_to_pose_delta(0.0,0.0,-0.075)
 manipulator.move_to_target(x_tol=0.05,z_tol=0.175)
