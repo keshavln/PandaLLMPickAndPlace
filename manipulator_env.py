@@ -56,7 +56,7 @@ class VLAPickPlace(Lift):
 
         self.cross = MujocoXMLObject(
             name = "object",
-            fname = '/home/keshav/Documents/vla_task/cross.xml'
+            fname = 'cross.xml'
         )
 
         self.mujoco_objects = [self.cube, self.cube2, self.cross]
