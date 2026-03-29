@@ -51,8 +51,9 @@ Execution sequence:
    ```
 4. The end-effector moves to the calculated object coordinates, grasps the object, lifts it vertically by a customizable distance, moves to the target’s coordinates, and releases the object.
 <br>
-Parallax error poses a challenge by introducing difficulty in aligning the gripper precisely with the object. If the object was not initially positioned directly underneath the camera and instead at an angle, the end-effector would not accurately position itself above the object. It is for this reason that a second iteration is run. Once the end-effector finishes moving to the approximate location of the object, object detection and coordinate transformation are run once more, producing an updated, more accurate set of coordinates to which the end-effector then proceeds. Any such number of iterations can be applied but two proves to be more than enough.
-<br>
+Parallax error poses a challenge by introducing difficulty in aligning the gripper precisely with the object. If the object was not initially positioned directly underneath the camera and instead at an angle, the end-effector would not accurately position itself above the object. It is for this reason that a second iteration is run (line 29, ```pipeline.py```). Once the end-effector finishes moving to the approximate location of the object, object detection and coordinate transformation are run once more, producing an updated, more accurate set of coordinates to which the end-effector then proceeds. Any such number of iterations can be applied but two proves to be more than enough.
+<br><br>
+
 Files used:
 - ```pipeline.py``` - entry point
 - ```llm.py``` - contains functions relevant to llm inference using the Groq API
